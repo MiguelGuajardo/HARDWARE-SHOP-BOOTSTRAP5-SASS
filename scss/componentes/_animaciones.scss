@@ -23,7 +23,7 @@
     .#{$pc}-imagen {
       width: $dimension;
       height: $dimension - 147px;
-      background-image: url("../imagenes/#{$pc}.png");
+      background-image: url("imagenes/#{$pc}.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -34,7 +34,7 @@
     .#{$notebook}-imagen {
       width: $dimension;
       height: $dimension - 147px;
-      background-image: url("../imagenes/#{$notebook}.jpg");
+      background-image: url("imagenes/#{$notebook}.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
