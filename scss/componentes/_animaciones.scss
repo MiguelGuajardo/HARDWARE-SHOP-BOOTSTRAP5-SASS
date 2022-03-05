@@ -17,31 +17,32 @@
   transform: scale(1 - 0.1);
   transition: all 0.2s ease;
   cursor: pointer;
-}
-/*EACH*/
-$dimension: 374px;
-@each $pc in pcBasico, pcTrabajo, pcGaming {
-  .#{$pc}-imagen {
-    width: $dimension;
-    height: $dimension - 147px;
-    background-image: url("/imagenes/#{$pc}.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: 2px solid black;
+  /*EACH*/
+  $dimension: 374px;
+  @each $pc in pcBasico, pcTrabajo, pcGaming {
+    .#{$pc}-imagen {
+      width: $dimension;
+      height: $dimension - 147px;
+      background-image: url("../imagenes/#{$pc}.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border: 2px solid black;
+    }
+  }
+  @each $notebook in notebookBasica, notebookTrabajo, notebookGaming {
+    .#{$notebook}-imagen {
+      width: $dimension;
+      height: $dimension - 147px;
+      background-image: url("../imagenes/#{$notebook}.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border: 2px solid black;
+    }
   }
 }
-@each $notebook in notebookBasica, notebookTrabajo, notebookGaming {
-  .#{$notebook}-imagen {
-    width: $dimension;
-    height: $dimension - 147px;
-    background-image: url("/imagenes/#{$notebook}.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: 2px solid black;
-  }
-}
+
 .cards:hover {
   transform: scale(1);
 }
