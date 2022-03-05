@@ -103,3 +103,13 @@
     animation-direction: normal;
   }
 }
+
+.boton-color {
+  background-color: white;
+  color: black;
+}
+.boton-color:hover,
+.boton-color:focus {
+  background-color: black;
+  color: white;
+}
