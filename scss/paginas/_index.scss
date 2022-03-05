@@ -1,0 +1,46 @@
+/*VARIABLES*/
+$color-h2-footer: lightblue;
+
+.a {
+  font-style: none;
+  text-decoration: none;
+}
+.fondo-color {
+  background-color: #495057;
+}
+.image {
+  width: 374px;
+  height: 227px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.margin-nav {
+  margin-top: 12vh;
+}
+#boton {
+  position: fixed;
+  bottom: -4px;
+  right: 10px;
+}
+.h2 {
+  color: $color-h2-footer;
+}
+
+.animacion-barra {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 15px solid blue;
+  animation-name: animacion-barra;
+  animation-duration: 1.5s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  margin-right: 20px;
+}

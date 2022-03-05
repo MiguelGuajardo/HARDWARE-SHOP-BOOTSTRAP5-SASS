@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Document</title>
+</head>
+<body class="d-flex h-100 text-center text-white bg-dark fondo">
+    <div class="container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="imagenes/descarga.png"
+              class="image-fluid"
+              alt=""
+              width="50vh"
+              height="50vh"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex w-100 justify-content-around">
+              <li class="nav-item">
+                <a
+                  class="nav-link active fs-4"
+                  aria-current="page"
+                  href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-4" href="tablaPcs.html">PCs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-4" href="tablaNotebook.html">Notebooks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-4" href="componentes.html">Componentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-4" href="contacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <!-- Button to Open the Modal -->
+              <button
+                type="button"
+                class="btn fs-4"
+                data-bs-toggle="modal"
+                data-bs-target="#myModal"
+              >
+                Iniciar sesión
+              </button>
+
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Modal Heading</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body color-modal fs-3">
+                      Lo sentimos, esta funcionalidad todavía esta en desarrollo
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Button to Open the Modal -->
+              <button
+                type="button"
+                class="btn fs-4"
+                data-bs-toggle="modal"
+                data-bs-target="#myModal"
+              >
+                Registrarse
+              </button>
+
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Modal Heading</h4>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body color-modal fs-3">
+                      Lo sentimos, esta funcionalidad todavía esta en desarrollo
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--MAIN-->
+      <form action="">
+
+      <div class="d-flex justify-content-center">
+        <div class="size-form d-flex flex-column">
+          <label for="exampleText" class="form-label pt-5">CONTACTANOS</label>
+          <div class="d-flex flex-column">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Nombre</label
+              >
+              <input
+                type="text"
+                name="Nombre"
+                class="form-control"
+                id="Nombre"
+                placeholder="Nombre"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Example textarea</label
+              >
+              <textarea
+                class="form-control"
+                name="text"
+              id="Mensaje"
+              cols="30"
+              rows="10"
+              ></textarea>
+            </div>
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Seleccione aquí su problema</label
+            >
+            <select
+              class="form-select form-select-sm"
+              aria-label=".form-select-sm example"
+            >
+              <option value="1">No funciona el sitio</option>
+              <option value="2">No puedo realizar la compra</option>
+              <option value="3">No encuentro lo que quiero</option>
+              <option value="3">Opinion</option>
+              <option value="3">Otro</option>
+            </select>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                name="checkbox"
+                id="checkbox"
+                required
+              />
+              <label class="form-check-label" for="flexCheckIndeterminate">
+                Has click si deseas enviarlo
+              </label>
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="reset">Borrar</button>
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

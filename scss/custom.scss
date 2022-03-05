@@ -1,0 +1,11 @@
+/*IMPORTAR COMPONENTES*/
+@use "../scss/componentes/tipografia";
+@use "../scss/componentes/animaciones";
+/*IMPORTAR PÁGINAS*/
+@use "../scss/paginas/index";
+@use "../scss/paginas/tablaPcs";
+@use "../scss/paginas/contacto";
+@use "../scss/paginas/componentes";
+
+/*IMPORTAR BOOTSTRAP*/
+@import "../node_modules/bootstrap/scss/bootstrap";

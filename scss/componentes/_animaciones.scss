@@ -1,0 +1,104 @@
+.rotate {
+  margin: 3vh 0;
+  animation: 2s linear infinite alternate;
+  animation-name: rotar;
+  color: lightblue;
+}
+@keyframes rotar {
+  from {
+    transform: rotate(5deg);
+  }
+
+  to {
+    transform: rotate(-5deg);
+  }
+}
+.cards {
+  transform: scale(1 - 0.1);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  /*EACH*/
+  $dimension: 374px;
+  @each $pc in pcBasico, pcTrabajo, pcGaming {
+    .#{$pc}-imagen {
+      width: $dimension;
+      height: $dimension - 147px;
+      background-image: url("/imagenes/#{$pc}.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border: 2px solid black;
+    }
+  }
+  @each $notebook in notebookBasica, notebookTrabajo, notebookGaming {
+    .#{$notebook}-imagen {
+      width: $dimension;
+      height: $dimension - 147px;
+      background-image: url("/imagenes/#{$notebook}.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border: 2px solid black;
+    }
+  }
+}
+.cards:hover {
+  transform: scale(1);
+}
+.a:hover {
+  text-decoration: underline;
+}
+@keyframes animacion-barra {
+  0% {
+    left: 0;
+  }
+  25% {
+    border-left: 15px solid rebeccapurple;
+  }
+  50% {
+    border-left: 15px solid red;
+  }
+  75% {
+    border-left: 15px solid yellow;
+  }
+  100% {
+    border-left: 15px solid aqua;
+    left: 2000px;
+  }
+}
+.girar-logo {
+  margin: 3vh 0;
+  animation: 4s linear infinite alternate;
+  animation-name: girar;
+  color: lightblue;
+}
+@keyframes girar {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.row-animation-bar {
+  margin: 2vh 0;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  .animacion-barra {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 15px solid blue;
+    animation-name: animacion-barra;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+  }
+}
