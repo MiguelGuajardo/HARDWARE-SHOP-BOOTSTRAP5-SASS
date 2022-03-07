@@ -21,8 +21,8 @@
   $dimension: 374px;
   @each $pc in pcBasico, pcTrabajo, pcGaming {
     .#{$pc}-imagen {
-      width: $dimension;
-      height: $dimension - 147px;
+      /*width: $dimension;
+      height: $dimension - 147px;*/
       background-image: url("imagenes/#{$pc}.png");
       background-repeat: no-repeat;
       background-position: center;
@@ -32,8 +32,8 @@
   }
   @each $notebook in notebookBasica, notebookTrabajo, notebookGaming {
     .#{$notebook}-imagen {
-      width: $dimension;
-      height: $dimension - 147px;
+      /* width: $dimension;
+      height: $dimension - 147px;*/
       background-image: url("imagenes/#{$notebook}.jpg");
       background-repeat: no-repeat;
       background-position: center;
