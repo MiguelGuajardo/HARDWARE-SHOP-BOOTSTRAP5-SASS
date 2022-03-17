@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Quicksand:wght@400;500;700&display=swap");
 .rotate {
   margin: 3vh 0;
   animation: 2s linear infinite alternate;
@@ -19,57 +18,63 @@
   transform: scale(0.9);
   transition: all 0.2s ease;
   cursor: pointer;
-  /*EACH*/
 }
-.cards .pcBasico-imagen {
-  width: 374px;
-  height: 227px;
-  background-image: url("/imagenes/pcBasico.png");
+
+/*EACH*/
+.pcBasico-imagen {
+  /*width: $dimension;
+  height: $dimension - 147px;*/
+  background-image: url("imagenes/pcBasico.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border: 2px solid black;
 }
-.cards .pcTrabajo-imagen {
-  width: 374px;
-  height: 227px;
-  background-image: url("/imagenes/pcTrabajo.png");
+
+.pcTrabajo-imagen {
+  /*width: $dimension;
+  height: $dimension - 147px;*/
+  background-image: url("imagenes/pcTrabajo.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border: 2px solid black;
 }
-.cards .pcGaming-imagen {
-  width: 374px;
-  height: 227px;
-  background-image: url("/imagenes/pcGaming.png");
+
+.pcGaming-imagen {
+  /*width: $dimension;
+  height: $dimension - 147px;*/
+  background-image: url("imagenes/pcGaming.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border: 2px solid black;
 }
-.cards .notebookBasica-imagen {
-  width: 374px;
-  height: 227px;
-  background-image: url("/imagenes/notebookBasica.jpg");
+
+.notebookBasica-imagen {
+  /* width: $dimension;
+  height: $dimension - 147px;*/
+  background-image: url("imagenes/notebookBasica.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border: 2px solid black;
 }
-.cards .notebookTrabajo-imagen {
-  width: 374px;
-  height: 227px;
-  background-image: url("/imagenes/notebookTrabajo.jpg");
+
+.notebookTrabajo-imagen {
+  /* width: $dimension;
+  height: $dimension - 147px;*/
+  background-image: url("imagenes/notebookTrabajo.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border: 2px solid black;
 }
-.cards .notebookGaming-imagen {
-  width: 374px;
-  height: 227px;
-  background-image: url("/imagenes/notebookGaming.jpg");
+
+.notebookGaming-imagen {
+  /* width: $dimension;
+  height: $dimension - 147px;*/
+  background-image: url("imagenes/notebookGaming.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -138,6 +143,17 @@
   animation-direction: normal;
 }
 
+.boton-color {
+  background-color: white;
+  color: black;
+}
+
+.boton-color:hover,
+.boton-color:focus {
+  background-color: black;
+  color: white;
+}
+
 /*VARIABLES*/
 .a {
   font-style: none;
@@ -202,7 +218,7 @@
 }
 
 .fondo {
-  background-image: url(/imagenes/fondoContacto.jpg);
+  background-image: url(imagenes/fondoContacto.jpg);
 }
 
 .row {
