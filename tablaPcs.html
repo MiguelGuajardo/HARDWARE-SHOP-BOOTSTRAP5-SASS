@@ -460,18 +460,28 @@
             </div>
         </div>
       </div>
-      <footer class="text-white text-center text-lg-start rounded-3 mt-3">
-        <div class="container fondo-color">
+      <footer class=" text-white text-center text-lg-start fondo-color rounded-3 mt-3">
+        <div class="container pb-5">
           <div class="row">
-            <div class="col-6 d-flex flex-column">
-              <a href="index.html" class="link-light a fs-4"> Inicio</a>
-              <a href="tablaPcs.html" class="link-light a fs-4">PCs</a>
-              <a href="tablaNotebook.html" class="link-light a fs-4">Notebooks</a>
-              <a href="componentes.html" class="link-light a fs-4">Componentes</a>
-              <a href="contacto.html" class="link-light a fs-4">Contacto</a>
+            <div class="d-none d-sm-flex col-12 col-sm-6 d-flex flex-column justify-content-center">
+              <a href="index.html" class="link-light a fs-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right btn-warning me-3" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg>Inicio</a>
+              <a href="tablaPcs.html" class="link-light a fs-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right btn-warning me-3" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg>PCs</a>
+              <a href="tablaNotebook.html" class="link-light a fs-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right btn-warning me-3" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg>Notebooks</a>
+              <a href="componentes.html" class="link-light a fs-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right btn-warning me-3" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg>Componentes</a>
+              <a href="contacto.html" class="link-light a fs-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right btn-warning me-3" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg>Contacto</a>
             </div>
-            <div class="col-6">
-              <label for="exampleText" class="form-label pt-5">CONTÁCTENOS</label>
+            <div class="col-12 col-sm-6">
+              <label for="exampleText" class="form-label pt-5 d-flex justify-content-center">CONTÁCTENOS</label>
           <div class="d-flex flex-column">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label"
@@ -504,35 +514,10 @@
                 class="form-control"
                 name="text"
               id="Mensaje"
-              cols="30"
-              rows="10"
+              cols="5"
+              rows="1"
+              placeholder="Su mensaje"
               ></textarea>
-            </div>
-            <label for="exampleFormControlTextarea1" class="form-label"
-              >Seleccione aquí su problema</label
-            >
-            <select
-              class="form-select form-select-sm"
-              aria-label=".form-select-sm"
-            >
-              <option value="1">No funciona el sitio</option>
-              <option value="2">No puedo realizar la compra</option>
-              <option value="3">No encuentro lo que quiero</option>
-              <option value="3">Opinion</option>
-              <option value="3">Otro</option>
-            </select>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                name="checkbox"
-                id="checkbox"
-                required
-              />
-              <label class="form-check-label" for="flexCheckIndeterminate">
-                Has click si deseas enviarlo
-              </label>
             </div>
             <div class="d-grid gap-2">
               <button class="btn btn-warning" type="reset">Borrar</button>
